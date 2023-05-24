@@ -3,10 +3,12 @@ import mixTheme from 'vuepress-theme-mix'
 
 export default defineUserConfig({
   lang: 'en-US',
-  title: 'This is my new rework of my homepage',
-  description: 'Enjoy!',
+  title: 'This is Markus Wagner',
+  description: 'This is my new rework of my homepage',
   theme: mixTheme({
-    // configure the theme here
+    // configure the theme heaare
   }),
-
+  plugins: [
+    '@vuepress/blog'
+  ]
 })
