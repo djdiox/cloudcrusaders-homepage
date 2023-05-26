@@ -7,8 +7,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Blog Demo",
-      description: "Welcome to Markus Wagner's blog",
+      title: "Markus Wagner's Blog",
+      description: "My personal Dev/Tech News/Music Blog",
     },
     "/zh/": {
       lang: "zh-CN",
