@@ -1,10 +1,8 @@
-
-name: Deploy Blog
+name: Deploy blog
 
 on:
   push:
     branches:
-      # make sure this is the branch you are using
       - main
 
 jobs:
@@ -14,29 +12,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
+          submodules: true
           fetch-depth: 0
-          # if your docs needs submodules, uncomment the following line
-          # submodules: true
 
-
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: yarn
+          node-version: 16
+          cache: pnpm
 
       - name: Install Deps
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
-      - name: Build Docs
+      - name: Build Blog
         env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          yarn run docs:build
-          > src/.vuepress/dist/.nojekyll
+          NODE_OPTIONS: --max_old_space_size=4096
+        run: pnpm run build:vite
 
-      - name: Deploy Docs  
-        uses: EdricChan03/action-build-deploy-ghpages@v3.1.0
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: dist
