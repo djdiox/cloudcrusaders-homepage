@@ -15,5 +15,9 @@
     "vue": "^3.2.47",
     "vuepress": "2.0.0-beta.62",
     "vuepress-theme-hope": "2.0.0-beta.215"
+  },
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=8.3.1"
   }
 }
