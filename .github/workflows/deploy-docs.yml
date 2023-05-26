@@ -1,5 +1,5 @@
 
-name: Deploy Docs
+name: Deploy Blog
 
 on:
   push:
@@ -36,9 +36,7 @@ jobs:
           yarn run docs:build
           > src/.vuepress/dist/.nojekyll
 
-      - name: Deploy Docs
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy Docs  
+        uses: EdricChan03/action-build-deploy-ghpages@v3.1.0
         with:
-          # This is the branch where the docs are deployed to
-          branch: gh-pages
-          folder: src/.vuepress/dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
