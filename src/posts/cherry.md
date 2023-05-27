@@ -2,14 +2,17 @@
 icon: edit
 date: 2022-01-09
 category:
-  - Cherry
+  - frontend
+  - blog
+  - homepage
 tag:
-  - red
-  - small
-  - round
+  - vue
+  - javascript
+  - vue press
+  - markdowm
 ---
 
-# Cherry
+# My Blog
 
 ## Heading 2
 
