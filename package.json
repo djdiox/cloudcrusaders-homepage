@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "start": "pnpm run docs:dev",
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
     "docs:dev": "vuepress dev src",
@@ -12,8 +13,9 @@
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.62",
-    "vue": "^3.2.47",
+    "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.62",
     "vuepress-theme-hope": "2.0.0-beta.215"
-  }
+  },
+  "packageManager": "pnpm@5.8.1"
 }
