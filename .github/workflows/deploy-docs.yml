@@ -22,14 +22,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
-
+          cache: npm
 
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          pnpm run docs:build
+          npm run docs:build
           > src/.vuepress/dist/.nojekyll
 
       - name: Deploy Docs
