@@ -22,11 +22,3 @@ Welcome to my page! Beside here, you can find my sets on SoundCloud:
 Or on Mixcloud (old):
 
 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fdiox_dj%2F" frameborder="0" ></iframe>
-
-## Heading 2
-
-Here is the content.
-
-### Heading 3
-
-Here is the content.
