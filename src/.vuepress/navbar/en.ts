@@ -39,9 +39,6 @@ export const enNavbar = navbar([
           "4",
         ],
       },
-      { text: "Cherry", icon: "edit", link: "cherry" },
-      { text: "Dragon Fruit", icon: "edit", link: "dragonfruit" },
-      "strawberry",
     ],
   },
   {
