@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://djdiox.github.io/cloudcrusaders-homepage/cloudcrusader-homepage/sitemap.xml
