@@ -1,8 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-const base = process.env.BASE_PATH;
 export default defineUserConfig({
-  base: '/',
+  base: '/cloudcrusader-homepage/',
   locales: {
     "/": {
       lang: "en-US",

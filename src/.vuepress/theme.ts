@@ -40,7 +40,6 @@ offset="1" />
 </svg>`
 export default hopeTheme({
   hostname: "https://djdiox.github.io/cloudcrusaders-homepage/",
-
   author: {
     name: "Cloud Crusader (Markus Wagner)",
     url: "https://markuswagner.dev",
