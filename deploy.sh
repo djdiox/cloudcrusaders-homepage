@@ -2,6 +2,7 @@
 
 yarn 
 yarn docs:build
+rm -rf ./docs
 cp -R ./src/.vuepress/dist/ ./docs
 set -e
 
