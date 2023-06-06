@@ -57,7 +57,7 @@ export default hopeTheme({
     medias: {
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",
-      // Bitbucket: "https://example.com",
+      // Bitbucket: "https://example.co/cloudcrusaders-homepage/",
       // Dingding: "https://example.com",
       //Discord: "https://example.com",
       //Dribbble: "https://example.com",
