@@ -28,11 +28,11 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          yarn && yarn docs:build && cp -R ./src/.vuepress/dist/ ./docs
+          yarn && yarn docs:build && cp -R ./src/.vuepress/dist/ /docs/
 
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # This is the branch where the docs are deployed to
-          branch: gh-pages
-          folder: ./docs/
+          branch: main
+          folder: /docs/
